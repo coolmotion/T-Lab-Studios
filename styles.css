@@ -235,9 +235,10 @@ footer {
 }
 
 /* Hide default controls */
-#styled-video::-webkit-media-controls {
+video#styled-video::-webkit-media-controls {
   display: none;
 }
+
 
 .rows {
   margin: 10px -16px;
