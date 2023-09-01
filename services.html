@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>T-Lab Studio</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <!-- Logo Image and Text (Aligned Left) -->
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-container">
+          <img src="img/Logo.jpg" alt="Your Logo" width="30" height="30" class="mr-2">
+          <span class="orange-text">T-Lab Studio</span>
+        </div>
+      </a>
+  
+      <!-- Navbar Toggler Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars navbar-toggler-icon-white"></i> <!-- White-colored Font Awesome Bars Icon -->
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <!-- Navigation Links (Aligned Right) -->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="color: white;">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html" style="color: white;">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: white;">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section id="welcome">
+    <div class="header">
+      <div class="animated-text">
+      <h2>Our Services</h2>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="column" >
+        <div class="animated-text">
+      <h3>Music Composing</h3>
+      <p style="padding-bottom: 50px;">Welcome to the sonic realm of creativity and innovation! At our cutting-edge audio and video production company, we are not just creators; we are curators of experiences that resonate, captivate, and leave an indelible mark. With a track record of producing chart-topping hits that pulse with the rhythm of the times, and crafting audio masterpieces for the world's most renowned brands, we seamlessly blend artistry with technology. Step into a world where sound and vision converge, and let us take you on a journey that transcends the ordinary and embraces the extraordinary.</p></div>
+      <div class="column" >
+        <video id="styled-video" controls autoplay muted loop style="padding-top: 100px;">
+          <source src="img/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+      </div>
+     </div>
+    <div class="row">
+      <div class="column" >
+        <div class="animated-text">
+      <h3>Mixing and Mastering</h3>
+      <p style="padding-bottom: 50px;">Welcome to the sonic realm of creativity and innovation! At our cutting-edge audio and video production company, we are not just creators; we are curators of experiences that resonate, captivate, and leave an indelible mark. With a track record of producing chart-topping hits that pulse with the rhythm of the times, and crafting audio masterpieces for the world's most renowned brands, we seamlessly blend artistry with technology. Step into a world where sound and vision converge, and let us take you on a journey that transcends the ordinary and embraces the extraordinary.</p></div>
+      <div class="column" >
+        <video id="styled-video" controls autoplay muted loop style="padding-top: 100px;">
+          <source src="img/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+      </div>
+     </div>
+    <div class="row">
+      <div class="column" >
+      <div class="animated-text">
+      <h3>Video Production</h3>
+      <p style="padding-bottom: 50px;">Welcome to the sonic realm of creativity and innovation! At our cutting-edge audio and video production company, we are not just creators; we are curators of experiences that resonate, captivate, and leave an indelible mark. With a track record of producing chart-topping hits that pulse with the rhythm of the times, and crafting audio masterpieces for the world's most renowned brands, we seamlessly blend artistry with technology. Step into a world where sound and vision converge, and let us take you on a journey that transcends the ordinary and embraces the extraordinary.</p></div>
+      <div class="column" >
+        <video id="styled-video" controls autoplay muted loop style="padding-top: 100px;">
+          <source src="img/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+      </div>
+     </div>
+    <footer>
+        
+         <div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          
+        </div>
+        <p>&copy; 2023 T-Lab Studio. All rights reserved.</p>
+    </footer>
+    <script>
+      const animatedTextElements = document.querySelectorAll('.animated-text');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('fade-in');
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 0.5 });
+
+      animatedTextElements.forEach(element => {
+          observer.observe(element);
+      });
+  </script>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
