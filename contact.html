@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>T-Lab Studio</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <!-- Logo Image and Text (Aligned Left) -->
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-container">
+          <img src="img/Logo.jpg" alt="Your Logo" width="30" height="30" class="mr-2">
+          <span class="orange-text">T-Lab Studio</span>
+        </div>
+      </a>
+  
+      <!-- Navbar Toggler Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars navbar-toggler-icon-white"></i> <!-- White-colored Font Awesome Bars Icon -->
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <!-- Navigation Links (Aligned Right) -->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="color: white;">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html" style="color: white;">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: white;">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <section id="contact-us" class="content-section" style="padding-top: 80px;">
+      <div class="animated-text">
+      <h2>Contact Us</h2>
+      <p class="centertext"> Reach out to us anytime, and our friendly team will be delighted to assist you. Whether it's about our products, services, or just a friendly hello, we're all ears. Get in touch through the provided form, email, or phone number, and let's start a conversation</p>
+      </div>
+      <div class="row">
+        <div class="column" >
+          <div class="animated-text">
+          <h3>Contact Form</h3>
+
+          <div class="formcontainer" >
+            <form action="/action_page.php" style="padding: top 20px;">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Sri Lanka</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          </div>
+        </div>
+        <div class="column" style="padding-bottom:80px ;">
+          <div class="animated-text">
+          <p style="padding-top: 50px;">Want more details? Get in touch on WhatsApp for a quick call to discuss all your queries!</p>
+          <a href="https://wa.link/wqgf3j" class="learn-more-button">WhatsApp</a>
+          <a><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1562960142223!2d79.89069607499609!3d6.871868393126834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a43c5a10e47%3A0x6e6530b3880b05b8!2sT-LAB%20Studios%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1692542727433!5m2!1sen!2slk" width="100%" height="400px" style="border:0; padding-top: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+          <a style="padding-top: 20px; ">30 Old Kesbewa Rd</a>
+          <br> Nugegoda 10250
+          <br>Sri Lanka
+        </div>
+        </div>
+    </section>
+  
+  
+    <footer>
+      <div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/tlabstudios/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@TLABPRODUCTIONS" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://instagram.com/tlabstudioslk?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p>&copy; 2023 T-Lab Studio. All rights reserved.</p>
+    </footer>
+    
+ 
+  <script>
+      const animatedTextElements = document.querySelectorAll('.animated-text');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('fade-in');
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 0.5 });
+
+      animatedTextElements.forEach(element => {
+          observer.observe(element);
+      });
+  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
