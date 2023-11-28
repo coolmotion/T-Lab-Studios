@@ -454,7 +454,7 @@ footer {
 }
 
 .client-logo {
-  max-width: 150px; /* Adjust the maximum width of the client logos */
+  max-width: 150px !important; /* Adjust the maximum width of the client logos */
   margin: 0 auto; /* Center the logos horizontally */
   border-radius: 10px; 
 }
