@@ -26,6 +26,50 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    footer {
+    background-color: #000000;
+    color: #F0F3F4;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer-social {
+    margin-top: 20px;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #F97316;
+    font-size: 1.5rem;
+  }
+  
+  .footer-social a:hover {
+    color: #E65100;
+  }
+  
+  /* Copyright text */
+  footer p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    max-height: 40px;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+  }  
+
   </style>
 </head>
 <body class="bg-black text-white flex items-center justify-center h-screen">
@@ -35,11 +79,21 @@
     <img src="img/Logo.jpg" alt="T-Lab Studios Logo" class="mx-auto " style="max-width: 200px;">
 
     <h1 class="text-4xl font-bold mb-4">T-Lab Studios</h1>
-    <p class="text-lg text-orange-500 p-6">We're working on something awesome! Stay tuned.</p>
+    <p class="text-lg text-orange-500 mb-">We're working on something awesome! Stay tuned.</p>
 
     <div class="loading-circle"></div>
 
-   
+    <p class="text-lg">Follow us for updates:</p>
+    <footer>
+      <div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/tlabstudios/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@TLABPRODUCTIONS" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://instagram.com/tlabstudioslk?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p>&copy; 2023 T-Lab Studio. </a></p>
+    </footer>
     </div>
   </div>
 
