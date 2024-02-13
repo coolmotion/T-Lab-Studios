@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="T-Lab Studios - Sri Lanka's premier audio and video production studio. Providing high-quality audio and video production services.">
+    <meta name="keywords"
+        content="T-Lab Studios, Tlab Studios, audio production, video production, Sri Lanka, studio, audio services, video services">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+    <title>T-Lab Studios - Audio and Video Production Studio in Sri Lanka</title>
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s 2s ease-in-out;
+            /* Run the fade-in animation once */
+        }
+
+        .bg-pulse {
+            animation: pulse 2s 1s 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="fixed top-0 w-full flex items-center justify-between flex-wrap bg-black  px-10 pl-10 pr-10 rounded-2xl shadow-2xl"
+        style="z-index: 500; padding: 4 10vw;">
+        <a href="index.html" class="flex items-center flex-shrink-0 text-orange-500 font-bold mr-6">
+            <img src="img/Logo.jpg" alt="Company Logo" class="h-16">
+        </a>
+
+        <div class="hidden lg:flex lg:w-auto lg:items-center lg:justify-center">
+            <a href="index.html"
+                class="block mt-4 lg:inline-block lg:mt-0 text-white text-sm hover:text-white mx-4 transition-transform transform hover:scale-110">
+                Home
+            </a>
+            <a href="underc.html"
+                class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4 transition-transform transform hover:scale-110">
+                Who we are
+            </a>
+            <a href="underc.html"
+                class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4 transition-transform transform hover:scale-110">
+                Our Services
+            </a>
+            <a href="underc.html"
+                class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4 transition-transform transform hover:scale-110">
+                Our Production
+            </a>
+            <a href="academy.html"
+                class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4 transition-transform transform hover:scale-110">
+                T-Lab Academy
+            </a>
+            <a href="shop.html"
+                class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4 transition-transform transform hover:scale-110">
+                T-Lab Shop
+            </a>
+
+        </div>
+        <div class="block lg:hidden">
+            <button id="toggle-btn"
+                class="flex items-center px-3 py-2 border rounded text-orange-500 font-bold border-orange-500">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="w-full flex-grow lg:hidden hidden mt-2 lg:mt-0">
+            <div class="text-sm">
+                <a href="index.html" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+                    Home
+                </a>
+                <a href="#" id="constructionLink"
+                    class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+                    Who We Are
+                </a>
+                <a href="#" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+                    Out Services
+                </a>
+                <a href="#" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+                    Our Production
+                </a>
+                <a href="academy.html" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+                    T-Lab Academy
+                </a>
+                <a href="#" id="constructionLink"
+                    class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+                    Shop
+                </a>
+            </div>
+        </div>
+    </nav>
+</body>
+<div class="animated-text">
+    <h2 class="text-5xl font-bold text-white text-center mt-20">T-Lab Shop</h2>
+    <p class="text-gray-500 pt-8 text-center" style="padding-left: 5vw; padding-right: 5vw;">Experience the excellence
+        of premium sound with our top-tier music equipment rentals. Transform your events and performances with
+        exceptional audio systems and instruments.</p>
+</div>
+<div class="container mx-auto  " style="padding: 5vh 5vw;">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Product Item 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="img/product1.jpeg.jpeg" alt="Product 1" class="w-full h-32 object-contain mb-4">
+            <h3 class="text-lg text-black font-semibold">ATH-M20x Professional headphones</h3>
+            <p class="text-gray-600">$19.99</p>
+            <button class="bg-orange-500 text-white rounded-full px-4 py-2 mt-4">Place Order</button>
+        </div>
+
+        <!-- <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="product2.jpg" alt="Product 2" class="w-full h-32 object-cover mb-4">
+            <h3 class="text-lg font-semibold">Product 2</h3>
+            <p class="text-gray-600">$29.99</p>
+            <button class="bg-orange-500 text-white rounded-full px-4 py-2 mt-4">Place Order</button>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="product3.jpg" alt="Product 3" class="w-full h-32 object-cover mb-4">
+            <h3 class="text-lg font-semibold">Product 3</h3>
+            <p class="text-gray-600">$39.99</p>
+            <button class="bg-orange-500 text-white rounded-full px-4 py-2 mt-4">Place Order</button>
+        </div>
+
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="product4.jpg" alt="Product 4" class="w-full h-32 object-cover mb-4">
+            <h3 class="text-lg font-semibold">Product 4</h3>
+            <p class="text-gray-600">$49.99</p>
+            <button class="bg-orange-500 text-white rounded-full px-4 py-2 mt-4">Place Order</button>
+        </div> -->
+    </div>
+</div>
+<footer>
+    <div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/tlabstudios/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@TLABPRODUCTIONS" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com/tlabstudioslk?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <p>&copy; 2023 T-Lab Studio. Designed by <a href="https://www.coolmotion.com">CoolMotion</a></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#toggle-btn').click(function () {
+            $('#menu').slideToggle(300);
+        });
+    });
+</script>
+<script>
+    const animatedTextElements = document.querySelectorAll('.animated-text');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    animatedTextElements.forEach(element => {
+        observer.observe(element);
+    });
+</script>
+
+</html>
