@@ -1,0 +1,14 @@
+id,name,category,price,orderLink
+product1,ATH-M20x Professional Headphones,audio,19000,https://wa.link/43bajs
+product2,Laptop XYZ123,audio,25000,https://wa.link/xyz123
+product3,Coffee Maker ABC456,video,15000,https://wa.link/abc456
+product4,Bookshelf Speaker ZYX789,audio,5000,https://wa.link/789xyz
+product5,Wireless Mouse MNO123,video,1500,https://wa.link/mno123
+product6,Smartphone Galaxy S20,audio,50000,https://wa.link/s20
+product7,Gaming Laptop GTX-9000,audio,35000,https://wa.link/gaming-laptop
+product8,Portable Blender BL-200,video,3000,https://wa.link/blender200
+product9,Bluetooth Earbuds E250,audio,8000,https://wa.link/earbuds250
+product10,Desk Organizer DO-123,video,1000,https://wa.link/do123
+product11,4K Ultra HD TV X9000,video,60000,https://wa.link/4k-tv
+product12,Wireless Keyboard K-789,video,2500,https://wa.link/keyboard789
+product13,Smartwatch SW-200,audio,12000,https://wa.link/smartwatch200

@@ -543,6 +543,15 @@ footer p {
   width: 100%;
   height: 100%;
 }
-.w-full {
-  width: 100%; /* Explicitly set width for all screen sizes */
+
+.tab {
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+/* Style for the selected tab */
+.tab.selected {
+  background-color: #f97316; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border-radius: 20px;
 }
